@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-section {
+    width: 100%;
+    height: 816px;
+    background-image: url(imagens/Hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.navbar-collapse {
+    background-color: transparent;
+}
+
+.nav-item {
+    font-family: 'Jura';
+    font-size: 25px;
+    line-height: 118%;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.nav-link {
+    color: black !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 70px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-item {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+.container1 {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 h1 {
+    font-family: 'Josefin Slab';
+    font-weight: 700;
+    font-size: 85px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container1 h1 {
+        font-size: 50px;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container1 h1 {
+        font-size: 40px;
+    }
+
+    .hero-section {
+        height: 500px;
+    }
+}
+
+.container2 {
+    width: 100%;
+    background: #B49B2C40;
+    display: flex;
+}
+
+@media (max-width: 992px) {
+    .container2 {
+        flex-direction: column;
+    }
+
+    #caixaEsquerda {
+        border-right: none !important;
+        border-bottom: solid 2px;
+        padding: 40px 20px;
+    }
+}
+
+#caixaEsquerda {
+    flex: 1;
+    border-right: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jura';
+    font-size: 43px;
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 569px;
+}
+
+#vivaLivre {
+    width: 575px;
+    padding: 100px;
+    font-size: 43px;
+}
+
+@media (max-width: 1200px) {
+    #vivaLivre {
+        padding: 50px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    #vivaLivre {
+        padding: 30px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    #vivaLivre {
+        padding: 20px;
+        font-size: 25px;
+    }
+}
+
+.seta {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+#setaDescobrir {
+    display: flex;
+    justify-content: end;
+
+}
+
+#caixaDireita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#cDireitaTop {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#trabalhosRemotos {
+    font-size: 30px;
+    margin-top: 150px;
+    font-family: 'Jura';
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    #trabalhosRemotos {
+        margin-top: 50px;
+    }
+}
+
+#cDireitaBot {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #cDireitaBot {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+#botEsquerda,
+#botDireita {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Jura';
+    align-items: center;
+}
+
+#container3 {
+    width: 100%;
+    height: auto;
+    min-height: 515px;
+    display: flex;
+    gap: 0;
+}
+
+@media (max-width: 768px) {
+    #container3 {
+        flex-direction: column;
+    }
+
+    #tresCaixaEsquerda {
+        width: 100% !important;
+        height: 300px;
+    }
+
+    #tresCaixaDireita {
+        width: 100% !important;
+        padding: 40px 0;
+    }
+}
+
+#tresCaixaEsquerda {
+    width: 43%;
+    height: 515px;
+    background-image: url(imagens/pexels-gya-den-768256-2303781\ 2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#tresCaixaDireita {
+    width: 57%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+#tresCaixaDireita div {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+#descubra {
+    font-size: 30px;
+    font-family: 'Jura';
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#escritorio {
+    font-family: 'Jura';
+    font-size: 30px;
+    text-align: center;
+}
+
+#descobrir {
+    font-size: 25px;
+    font-family: 'Jura';
+    font-weight: 700;
+    line-height: 118%;
+    border: solid;
+    border-radius: 50px;
+    height: 50px;
+    width: 309px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+    #descobrir {
+        width: 80%;
+        max-width: 309px;
+    }
+
+    #descubra,
+    #escritorio {
+        font-size: 25px;
+    }
+}
+
+#descobrir a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#container4 {
+    width: 100%;
+    height: auto;
+    min-height: 541px;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    #container4 {
+        flex-direction: column;
+    }
+
+    #quatroCaixaEsquerda {
+        width: 100% !important;
+        order: 2;
+    }
+
+    #quatroCaixaDireita {
+        width: 100% !important;
+        height: 300px !important;
+        order: 1;
+    }
+}
+
+#container4 a {
+    padding-bottom: 20px;
+}
+
+#container5 a {
+    padding-bottom: 20px;
+}
+
+#quatroCaixaEsquerda {
+    background: #B49B2C40;
+    width: 50%;
+    height: 541px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+#temosDestinos {
+    font-size: 30px;
+    font-family: 'Jura';
+    text-align: center;
+}
+
+#especiais {
+    font-size: 30px;
+    font-family: 'Jura';
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+
+    #temosDestinos,
+    #especiais {
+        font-size: 25px;
+    }
+}
+
+#explorar {
+    font-size: 25px;
+    font-family: 'Jura';
+    font-weight: 700;
+    line-height: 118%;
+    border: solid;
+    border-radius: 50px;
+    width: 309px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 576px) {
+    #explorar {
+        width: 80%;
+        max-width: 309px;
+    }
+}
+
+#explorar a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+#quatroCaixaDireita {
+    width: 50%;
+    height: 541px;
+    background-image: url(imagens/pexels-thatguycraig000-1546898\ 2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#container5 {
+    width: 100%;
+    height: 690.51px;
+    background-image: url(imagens/pexels-thepaintedsquare-583848\ 1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #container5 {
+        height: 500px;
+    }
+}
+
+#blog {
+    background-color: black;
+    color: white;
+    height: 77px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+    width: 309px;
+
+}
+
+#blog a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 25px;
+    font-family: 'jura';
+
+}
+
+
+@media (max-width: 768px) {
+    #blog {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    #blog {
+        width: 80%;
+        max-width: 309px;
+        margin-bottom: 100px;
+    }
+}
+
+footer {
+    height: auto;
+    min-height: 266px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+#footerLiving {
+    font-family: 'Jura';
+    font-size: 30px;
+    line-height: 118%;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#redesSociais {
+    display: flex;
+    color: white;
+    margin-bottom: 20px;
+    gap: 25px;
+}
+
+footer a img {
+    width: 50px;
+}
+
+@media (max-width: 576px) {
+    footer a img {
+        width: 40px;
+    }
+
+    #redesSociais {
+        gap: 15px;
+    }
+
+    #footerLiving {
+        font-size: 25px;
+    }
+}
+
+#Power {
+    font-family: 'Jura';
+    font-size: 15px;
+    line-height: 118%;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="locais.css">
+</head>
+
+<body>
+    <header id="acomodacaoHeader">
+        <nav class="container-fluid">
+            <div class="navUpgrade">
+                <a class="butaoInicial" href="index.html"><img src="imagens/MlogoWhite.png" alt="Sem imagem"></a>
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-md-block" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="acomodacao.html"> Acomodação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://paisagens.blog/" target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!------------------------------------------------------------------------------------------->
+
+    <div id="corOpaca"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-2 col-lg-5 offset-lg-2 col-sm-10 offset-sm-1 col-12">
+                <div id="form-container">
+                    <div class="form-group">
+                        <label for="pais">Escolha o país:</label>
+                        <div class="select-wrapper">
+                            <select id="pais" name="pais">
+                                <option value="" disabled selected>país</option>
+                                <option value="portugal">Portugal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade">Escolha a cidade:</label>
+                        <div class="select-wrapper">
+                            <select id="cidade" name="cidade">
+                                <option value="" disabled selected>cidade</option>
+                                <option value="porto">Porto</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="button" onclick="validarSelecao()">Ver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="espaco"></div>
+
+    <!------------------------------------------------------------------------------------------->
+
+    <script>
+        function validarSelecao() {
+            var pais = document.getElementById('pais').value;
+            var cidade = document.getElementById('cidade').value;
+
+            if (pais === "" || cidade === "") {
+                alert("Por favor, escolha um país e uma cidade antes de continuar.");
+                return;
+            }
+
+            // Se tudo estiver escolhido, continua para a outra página
+            window.location.href = "locaisPorto.html";
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap');
+
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 70px;
+    margin-right: 20px;
+    font-family: 'Josefin Slab';
+    font-size: 25px;
+}
+
+.nav-item {
+    font-family: 'Jura';
+    font-size: 25px;
+    line-height: 118%;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-item {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+#acomodacaoHeader {
+    background-image: url(imagens/pexels-lureofadventure-28365967\ 2.png);
+    background-size: cover;
+    background-position: top center;
+
+    background-repeat: no-repeat;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.butaoInicial {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    padding-top: 20px;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.butaoInicial img {
+    width: 59px;
+    height: 70px;
+}
+
+#novoOffice {
+    width: 100%;
+    min-height: 146px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Slab';
+    font-size: 80px;
+    color: white;
+    position: relative;
+    z-index: 5;
+    align-self: center;
+    margin-top: 28vh;
+}
+
+@media (max-width: 768px) {
+    #acomodacaoHeader {
+        width: 100% !important;
+        background-position: top center;
+
+    }
+
+    #novoOffice {
+        font-size: 40px;
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    #novoOffice {
+        font-size: 30px;
+        min-height: 80px;
+        padding: 10px;
+    }
+}
+
+#acomodacaoSetor2 {
+    background: #B49B2C40;
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    margin-bottom: 300px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#cards li {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    display: flex;
+}
+
+.card-body {
+    margin-top: -30px;
+    max-height: 82px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    width: 574px;
+    height: 660px;
+    padding-bottom: 50px;
+    background-color: #D9D9D9;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.posicaoCards {
+    margin-top: 100px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+.card img {
+    padding: 20px;
+    border-radius: 35px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Jura';
+    font-size: 30px;
+    height: 50px;
+}
+
+.card div p {
+    padding-left: 30px;
+    font-family: 'Jura';
+    font-size: 20px;
+}
+
+.listaAcomodacao {
+    position: relative;
+    padding-left: 0.5em;
+    list-style: none;
+    font-family: 'Jura';
+    font-size: 20px;
+}
+
+.listaAcomodacao::before {
+    content: ".";
+    position: absolute;
+    left: -0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: inherit;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+.infoAcomodacao {
+    display: flex;
+    justify-content: center;
+    font-family: 'Jura';
+    font-size: 20px;
+    align-items: flex-end;
+    text-decoration: none;
+    color: inherit;
+}
+
+#equipada {
+    height: 10px;
+    font-size: 20px;
+    font-family: 'Jura';
+}
+
+.card ul {
+    margin-bottom: 50px;
+    padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+    #acomodacaoSetor2 {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    #acomodacaoSetor2 ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    #cards li {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 600px;
+    }
+
+    .posicaoCards {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 50px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 266px;
+    top: 3132px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#footerLiving {
+    font-family: 'Jura';
+    font-size: 30px;
+    line-height: 118%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#redesSociais {
+    display: flex;
+    color: white;
+    margin-bottom: 20px;
+    gap: 25px;
+}
+
+footer a img {
+    width: 50px;
+}
+
+#Power {
+    font-family: 'Jura';
+    font-size: 15px;
+    line-height: 118%;
+    color: white;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+    footer a img {
+        width: 40px;
+    }
+
+    #redesSociais {
+        gap: 15px;
+    }
+
+    #footerLiving {
+        font-size: 25px;
+    }
+
+    footer {
+        height: auto;
+        padding: 30px 0;
+    }
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap');
+
+body {
+    background-image: url(imagens/pexels-lureofadventure-28365967\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#corOpaca {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+
+.alugar {
+    border-radius: 35px;
+    background-color: #D9D9D9;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    width: 763px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+    font-size: 20px;
+}
+
+.alugar img {
+    width: 90%;
+    border-radius: 35px;
+    margin-top: 20px;
+}
+
+.texto {
+    width: 90%;
+}
+
+.botaoAlugar {
+    width: 345px;
+    margin-bottom: 20px;
+}
+
+.botaoAlugar button {
+    border-radius: 15px;
+}
+
+.button {
+    background-color: #686931;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-family: 'Jura';
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0%;
+
+}
+
+@media (max-width: 950px) {
+    .alugar {
+        width: 80%;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap');
+
+body {
+    background-image: url(imagens/pexels-alex-andrews-271121-1203808\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+#corOpaca {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+#acomodacaoHeader {
+    position: relative;
+    z-index: 2;
+}
+
+.navUpgrade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+    margin-right: 20px;
+    color: white;
+    font-family: 'Josefin Slab';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-family: Josefin Slab;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav-item {
+    font-family: 'Jura';
+    font-size: 25px;
+    line-height: 118%;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.butaoInicial img {
+    width: 59px;
+    height: 70px;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 8px;
+    margin-right: 15px;
+    display: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    background-color: #D9D9D9;
+    border-radius: 35px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 466px;
+    height: 642px;
+    margin-left: 0;
+    margin-top: 200px;
+}
+
+.form-group {
+    background-color: #D9D9D9;
+    opacity: 1;
+    width: 100%;
+}
+
+.form-group label {
+    height: 30px;
+    display: block;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    background-color: #D9D9D9;
+    font-family: 'Jura';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0%;
+}
+
+#pais {
+    background-color: white;
+    font-family: 'Jura';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0%;
+}
+
+#cidade {
+    background-color: white;
+    font-family: 'Jura';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0%;
+}
+
+.select-wrapper {
+    position: relative;
+    border-radius: 15px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.select-wrapper select {
+    appearance: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #555;
+    font-size: 16px;
+    height: 76px;
+    background-color: transparent;
+}
+
+.select-wrapper::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    width: 30px;
+    height: 18px;
+}
+
+#form-container button {
+    margin-top: 50px;
+    border-radius: 15px;
+    width: 345px;
+    height: 76px;
+}
+
+.button {
+    background-color: #686931;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-family: 'Jura';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 118%;
+    letter-spacing: 0%;
+}
+
+.button:hover {
+    background-color: #6c7833;
+}
+
+#espaco {
+    height: 200px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1300px) {
+    .navbar-nav {
+        gap: 30px;
+    }
+
+    .nav-link {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar-nav {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navUpgrade {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .navbar-nav {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    #form-container {
+        width: 100%;
+        max-width: 466px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse:not(.show) {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        z-index: 10;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .nav-item {
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        font-size: 22px;
+    }
+
+    #form-container {
+        margin: 100px auto 0;
+        height: auto;
+        min-height: 550px;
+        padding: 25px 15px;
+    }
+
+    .form-group label {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    #pais,
+    #cidade {
+        font-size: 20px;
+    }
+
+    .button {
+        width: 90%;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navUpgrade {
+        margin-top: 15px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    #form-container {
+        width: 100%;
+        border-radius: 25px;
+        margin-top: 80px;
+        padding: 20px 10px;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .form-group label {
+        font-size: 20px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    #pais,
+    #cidade {
+        font-size: 18px;
+        height: 60px;
+    }
+
+    .button {
+        height: 60px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}
